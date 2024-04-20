@@ -10,16 +10,18 @@ config_version=5
 
 [application]
 
-config/name="Game"
+config/name="Complete Roguelike Tutorial"
 run/main_scene="res://src/Game/game.tscn"
-config/features=PackedStringArray("4.2", "Mobile")
+config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Game"
+project/assembly_name="Complete Roguelike Tutorial"
 
 [rendering]
 
-renderer/rendering_method="mobile"
-environment/defaults/default_clear_color=Color(0.278431, 0.176471, 0.235294, 1)
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
